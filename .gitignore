@@ -7,3 +7,4 @@ log
 .lein-failures
 resources/ratings.dat
 resources/log4j.properties
+target
