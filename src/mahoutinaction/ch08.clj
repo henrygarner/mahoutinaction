@@ -25,7 +25,7 @@
         conf (Configuration.)
         fs  (FileSystem/get conf)
         path (Path. filepath)
-        writer (SequenceFile$Writer. fs conf path 
+        writer (SequenceFile$Writer. fs conf path
                                      Text
                                      VectorWritable)
         vec (VectorWritable.)]
@@ -58,4 +58,5 @@
     (write-apple-data filepath)
     (read-apple-data filepath)))
 
-;; (apples-to-vectors "appledata/apples") ;; relative to project, not HadoopFS
+;; (apples-to-vectors "appledata/apples")
+;; relative to project, not HadoopFS

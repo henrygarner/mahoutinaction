@@ -1,6 +1,7 @@
 (ns mahoutinaction.core
   (:use [mahoutinaction.ch02 :as ch02]
         [mahoutinaction.ch03 :as ch03]
+        [mahoutinaction.ch07 :as ch07]
         [mahoutinaction.ch15 :as ch15]))
 
 ;; Chapter 3
@@ -9,6 +10,10 @@
     (let [stats (ch03/precision-boolean "resources/ua.base.gz")]
       (println (str "Precision: " (.getPrecision stats) " Recall: "
                     (.getRecall stats))))))
+                    
+;; Chapter 7
+(defn run-ch07 []
+  (ch07/run))
 
 (defn -main []
   (do
